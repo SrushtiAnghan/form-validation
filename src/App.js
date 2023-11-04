@@ -1,6 +1,7 @@
 import "./App.css";
-import Login from "./FormValidator/Login";
-import Signup from "./FormValidator/Signup ";
+import Login from "./components/registerAndLogin/Login";
+import Signup from "./components/registerAndLogin/Signup";
+
 
 function App() {
   return (
