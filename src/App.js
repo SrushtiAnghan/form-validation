@@ -1,17 +1,12 @@
 import "./App.css";
-import Loginflow from "./components/Loginflow/Loginflow";
-import Register from "./components/Loginflow/Register";
-import Login from "./components/registerAndLogin/Login";
-import Signup from "./components/registerAndLogin/Signup";
-
+import Login from "./components/Loginflow/Login";
+import Signup from "./components/Loginflow/Signup";
 
 function App() {
   return (
     <>
-      {/* <Login />
-      <Signup/> */}
-      {/* <Loginflow/> */}
-      <Register/>
+      <Login />
+      {/* <Signup /> */}
     </>
   );
 }

@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import "./Loginflow.scss";
-const Loginflow = () => {
+import "./Login.scss";
+
+const Login = () => {
   const [feilds, setfeilds] = useState({
     username: "",
     password: "",
@@ -86,4 +87,4 @@ const Loginflow = () => {
   );
 };
 
-export default Loginflow;
+export default Login;

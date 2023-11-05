@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Register.scss";
+import "./Signup.scss";
 
-const Register = () => {
+const Signup = () => {
   const [feilds, setfeilds] = useState({
     email: "",
     username: "",
@@ -130,4 +130,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Signup;
