@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "./Login.scss";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [feilds, setfeilds] = useState({
@@ -76,9 +77,16 @@ const Login = () => {
             </button>
             <div className="signup">
               Don’t have an account?
-              <div style={{ marginLeft: "10px", color: "#87cefa" }}>
+              <Link
+                to="/signup"
+                style={{
+                  marginLeft: "10px",
+                  color: "#87cefa",
+                  cursor: "pointer",
+                }}
+              >
                 Sign Up.
-              </div>
+              </Link>
             </div>
           </div>
         </div>
