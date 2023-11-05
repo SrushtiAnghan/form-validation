@@ -24,36 +24,16 @@
 
 // export default App;
 
-// import { Route } from "react-router-dom";
-// import Login from "./components/Loginflow/Login";
-// import Signup from "./components/Loginflow/Signup";
-
-// function App() {
-//   return (
-//     <div>
-//       <Route path="/login" component={Login} />
-//       <Route path="/signup" component={Signup} />
-//     </div>
-//   );
-// }
-
-// export default App;
-
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Login from "./components/Loginflow/Login";
 import Signup from "./components/Loginflow/Signup";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Switch>
-          <Route path="/login" component={Login} />
-          <Route path="/signup" component={Signup} />
-        </Switch>
-      </div>
-    </Router>
+    <div>
+      <Route path="/login" component={Login} />
+      <Route path="/signup" component={Signup} />
+    </div>
   );
 }
 
