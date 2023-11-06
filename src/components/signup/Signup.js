@@ -17,7 +17,7 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (feilds.password == feilds.confirmPassword) {
+    if (feilds.password === feilds.confirmPassword) {
       console.log(feilds.email);
       console.log(feilds.username);
       console.log(feilds.password);
@@ -68,7 +68,7 @@ const Signup = () => {
               className="button"
               style={{
                 borderColor: `${
-                  feilds.password == feilds.confirmPassword
+                  feilds.password === feilds.confirmPassword
                     ? "#40e9f1"
                     : "rgb(255, 72, 72)"
                 }`,
@@ -88,7 +88,7 @@ const Signup = () => {
               className="smol-txt"
               style={{
                 display: `${
-                  feilds.password == feilds.confirmPassword ? "none" : "inline"
+                  feilds.password === feilds.confirmPassword ? "none" : "inline"
                 }`,
               }}
             >
@@ -123,7 +123,7 @@ const Signup = () => {
             <div className="signup">
               Already have an account?
               <Link
-                to="/login"
+                to="/"
                 style={{
                   marginLeft: "10px",
                   color: "#87cefa",
