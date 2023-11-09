@@ -28,10 +28,9 @@ const Signup = () => {
     <div>
       <form action="" onSubmit={handleSubmit}>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <div className="background"></div>
-          <div className="container">
+          <div className="signup-container">
             <div className="login-text neonText">SIGN UP</div>
-            <div className="button" style={{ marginTop: "40px" }}>
+            <div className="signup-input">
               <input
                 className="input"
                 type="email"
@@ -42,7 +41,7 @@ const Signup = () => {
                 onChange={handleInput}
               />
             </div>
-            <div className="button">
+            <div className="signup-input">
               <input
                 className="input"
                 type="text"
@@ -53,7 +52,7 @@ const Signup = () => {
                 onChange={handleInput}
               />
             </div>
-            <div className="button" style={{ position: "relative" }}>
+            <div className="signup-input" style={{ position: "relative" }}>
               <input
                 className="input"
                 type="password"
@@ -65,7 +64,7 @@ const Signup = () => {
               />
             </div>
             <div
-              className="button"
+              className="signup-input"
               style={{
                 borderColor: `${
                   feilds.password === feilds.confirmPassword
@@ -95,7 +94,7 @@ const Signup = () => {
               password's dont match
             </div>
             <button
-              className="button login fill"
+              className="signup-input login fill"
               type="submit"
               style={{
                 borderRadius: "0",
@@ -105,7 +104,7 @@ const Signup = () => {
               }}
             >
               <div
-                className="button login fill"
+                className="signup-input login fill"
                 style={{
                   position: "absolute",
                   height: "48px",

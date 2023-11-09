@@ -24,10 +24,9 @@ const Login = () => {
     <div>
       <form action="" onSubmit={handleSubmit}>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <div className="background"></div>
-          <div className="container">
-            <div className="login-text neonText">LOGIN</div>
-            <div className="button">
+          <div className="login-container">
+            <div className="login-text">LOGIN</div>
+            <div className="login-input">
               <input
                 className="input"
                 type="email"
@@ -38,7 +37,7 @@ const Login = () => {
                 onChange={handleInput}
               />
             </div>
-            <div className="button">
+            <div className="login-input">
               <input
                 className="input"
                 type="password"
@@ -50,7 +49,7 @@ const Login = () => {
               />
             </div>
             <button
-              className="button login fill"
+              className="login-input login fill"
               type="submit"
               style={{
                 zIndex: 2,
@@ -60,7 +59,7 @@ const Login = () => {
               }}
             >
               <div
-                className="button login fill"
+                className="login-input login fill"
                 style={{
                   position: "absolute",
                   height: "48px",
